@@ -2,6 +2,9 @@ plugins {
   
     id 'java'
     id 'jacoco'
+    id 'application'
+    id 'pmd'              // Use the PMD plugin for static analysis just
+                          // to have something interesting happening.
 }
 
 jacoco {
