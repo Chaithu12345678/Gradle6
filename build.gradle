@@ -14,7 +14,6 @@ jacoco {
 jacocoTestReport {
     reports {
         
-        csv.enabled false
         html.enabled true // Enable HTML report
     }
 }
