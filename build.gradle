@@ -1,8 +1,19 @@
 plugins {
+  
     id 'java'
-    id 'application'
-    id 'pmd'              // Use the PMD plugin for static analysis just
-                          // to have something interesting happening.
+    id 'jacoco'
+}
+
+jacoco {
+    toolVersion = "0.8.7" // Use the latest version
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled false
+        csv.enabled false
+        html.enabled true // Enable HTML report
+    }
 }
 
 jar {
